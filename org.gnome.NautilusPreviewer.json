@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.NautilusPreviewer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "sushi",
     "cleanup": [
@@ -102,8 +102,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/sushi/41/sushi-41.0.tar.xz",
-                    "sha256": "9b7525690ce436624efa0a605773493432cd0ef6b8f464982e8b844eda9898ee"
+                    "url": "https://download.gnome.org/sources/sushi/42/sushi-42.0.tar.xz",
+                    "sha256": "45d8db7af45a79784e7a34588d149ea955c8be44bb82a36e896829405b7c8820"
                 }
             ]
         }
