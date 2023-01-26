@@ -74,13 +74,14 @@
                 "-Ddbus=false",
                 "-Dintrospection=true",
                 "-Dcomics=disabled",
-                "-Dgspell=disabled"
+                "-Dgspell=disabled",
+                "-Dgtk_doc=false"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evince/41/evince-41.2.tar.xz",
-                    "sha256": "95abad0d6feeac9560db3ab80ba7c5eabb1fdf1ca0e3b3c93339af05453a24d8"
+                    "url": "https://download.gnome.org/sources/evince/43/evince-43.1.tar.xz",
+                    "sha256": "6d75ca62b73bfbb600f718a098103dc6b813f9050b9594be929e29b4589d2335"
                 }
             ]
         },
