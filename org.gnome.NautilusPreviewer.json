@@ -33,7 +33,12 @@
                 {
                     "type": "archive",
                     "url": "https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz",
-                    "sha256": "c835b640a40ce357e1b83666aabd95edffa24ddddd49b8daff63adb851cdab74"
+                    "sha256": "c835b640a40ce357e1b83666aabd95edffa24ddddd49b8daff63adb851cdab74",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 3687,
+                        "url-template": "https://poppler.freedesktop.org/poppler-data-$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -56,7 +61,12 @@
                 {
                     "type": "archive",
                     "url": "https://poppler.freedesktop.org/poppler-23.09.0.tar.xz",
-                    "sha256": "80d1d44dd8bdf4ac1a47d56c5065075eb9991790974b1ed7d14b972acde88e55"
+                    "sha256": "80d1d44dd8bdf4ac1a47d56c5065075eb9991790974b1ed7d14b972acde88e55",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 3686,
+                        "url-template": "https://poppler.freedesktop.org/poppler-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -81,7 +91,11 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz",
-                    "sha256": "d18647d4275cbddf0d32817b1d04e307342a85be914ec4dad2d8082aaf8aa4a8"
+                    "sha256": "d18647d4275cbddf0d32817b1d04e307342a85be914ec4dad2d8082aaf8aa4a8",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "evince"
+                    }
                 }
             ]
         },
@@ -104,7 +118,12 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/sushi/45/sushi-45.0.tar.xz",
-                    "sha256": "6a5f14b05a3471fe43853cc2b0e1ae5484d7f9f86f7ea376179829b9bf4ac1dd"
+                    "sha256": "6a5f14b05a3471fe43853cc2b0e1ae5484d7f9f86f7ea376179829b9bf4ac1dd",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "is-important": true,
+                        "name": "sushi"
+                    }
                 }
             ]
         }
