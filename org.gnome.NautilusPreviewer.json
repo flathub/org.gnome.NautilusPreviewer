@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.NautilusPreviewer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "sushi",
     "cleanup": [
@@ -33,7 +33,12 @@
                 {
                     "type": "archive",
                     "url": "https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz",
-                    "sha256": "c835b640a40ce357e1b83666aabd95edffa24ddddd49b8daff63adb851cdab74"
+                    "sha256": "c835b640a40ce357e1b83666aabd95edffa24ddddd49b8daff63adb851cdab74",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 3687,
+                        "url-template": "https://poppler.freedesktop.org/poppler-data-$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -55,8 +60,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-23.07.0.tar.xz",
-                    "sha256": "f29b4b4bf47572611176454c8f21506d71d27eca5011a39aa44038b30b957db0"
+                    "url": "https://poppler.freedesktop.org/poppler-23.09.0.tar.xz",
+                    "sha256": "80d1d44dd8bdf4ac1a47d56c5065075eb9991790974b1ed7d14b972acde88e55",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 3686,
+                        "url-template": "https://poppler.freedesktop.org/poppler-$version.tar.xz"
+                    }
                 }
             ]
         },
@@ -80,20 +90,28 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evince/44/evince-44.3.tar.xz",
-                    "sha256": "3b8ba1581a47a6e9f57f6b6aa08f0fb67549c60121aa24e31140e93947b83622"
+                    "url": "https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz",
+                    "sha256": "d18647d4275cbddf0d32817b1d04e307342a85be914ec4dad2d8082aaf8aa4a8",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "evince"
+                    }
                 }
             ]
         },
         {
-            "name": "gtksourceview",
+            "name": "sourceview-4",
             "buildsystem": "meson",
-            "config-opts": [ "-Dvapi=false" ],
+            "config-opts": [
+                "-Dinstall_tests=false",
+                "-Dgtk_doc=false",
+                "-Dvapi=false"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtksourceview/5.8/gtksourceview-5.8.0.tar.xz",
-                    "sha256": "110dd4c20def21886fbf777298fe0ef8cc2ad6023b8f36c7424411a414818933"
+                    "url": "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz",
+                    "sha256": "7ec9d18fb283d1f84a3a3eff3b7a72b09a10c9c006597b3fbabbb5958420a87d"
                 }
             ]
         },
@@ -103,8 +121,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/sushi/44/sushi-44.2.tar.xz",
-                    "sha256": "6c002fe0aea19027ba448b5aec94d5cd753c9752f996ee033152428738ea43e9"
+                    "url": "https://download.gnome.org/sources/sushi/45/sushi-45.0.tar.xz",
+                    "sha256": "6a5f14b05a3471fe43853cc2b0e1ae5484d7f9f86f7ea376179829b9bf4ac1dd",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "is-important": true,
+                        "name": "sushi"
+                    }
                 }
             ]
         }
