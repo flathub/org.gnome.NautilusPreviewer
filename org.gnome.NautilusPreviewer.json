@@ -51,6 +51,8 @@
                 "-DENABLE_LIBOPENJPEG=none",
                 "-DENABLE_BOOST=OFF",
                 "-DENABLE_CPP=OFF",
+                "-DENABLE_QT5=OFF",
+                "-DENABLE_QT6=OFF",
                 "-DBUILD_GTK_TESTS=OFF",
                 "-DBUILD_CPP_TESTS=OFF"
             ],
@@ -60,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-23.09.0.tar.xz",
-                    "sha256": "80d1d44dd8bdf4ac1a47d56c5065075eb9991790974b1ed7d14b972acde88e55",
+                    "url": "https://poppler.freedesktop.org/poppler-24.04.0.tar.xz",
+                    "sha256": "1e804ec565acf7126eb2e9bb3b56422ab2039f7e05863a5dfabdd1ffd1bb77a7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3686,
@@ -90,8 +92,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evince/45/evince-45.0.tar.xz",
-                    "sha256": "d18647d4275cbddf0d32817b1d04e307342a85be914ec4dad2d8082aaf8aa4a8",
+                    "url": "https://download.gnome.org/sources/evince/46/evince-46.0.tar.xz",
+                    "sha256": "aff6af69392c04956bfad976dec5d1583b41d5a334e937995f7c3ca0740de221",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evince"
@@ -121,8 +123,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/sushi/45/sushi-45.0.tar.xz",
-                    "sha256": "6a5f14b05a3471fe43853cc2b0e1ae5484d7f9f86f7ea376179829b9bf4ac1dd",
+                    "url": "https://download.gnome.org/sources/sushi/46/sushi-46.0.tar.xz",
+                    "sha256": "96085baaa430ab2142c606aab5c47e2fbb2fd3eb70a352137e65c59a58a0f2c6",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
