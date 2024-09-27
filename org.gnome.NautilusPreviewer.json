@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.NautilusPreviewer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "command": "sushi",
     "cleanup": [
@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-24.04.0.tar.xz",
-                    "sha256": "1e804ec565acf7126eb2e9bb3b56422ab2039f7e05863a5dfabdd1ffd1bb77a7",
+                    "url": "https://poppler.freedesktop.org/poppler-24.09.0.tar.xz",
+                    "sha256": "ebd857987e2395608c69fdc44009692d5906f13b612c5280beff65a0b75dc255",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3686,
@@ -92,8 +92,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evince/46/evince-46.0.tar.xz",
-                    "sha256": "aff6af69392c04956bfad976dec5d1583b41d5a334e937995f7c3ca0740de221",
+                    "url": "https://download.gnome.org/sources/evince/46/evince-46.3.tar.xz",
+                    "sha256": "bc0d1d41b9d7ffc762e99d2abfafacbf745182f0b31d86db5eec8c67f5f3006b",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evince"
