@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.NautilusPreviewer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "sushi",
     "cleanup": [
@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-25.04.0.tar.xz",
-                    "sha256": "b010c596dce127fba88532fd2f1043e55ea30601767952d0f2c0a80e7dc0da3d",
+                    "url": "https://poppler.freedesktop.org/poppler-25.10.0.tar.xz",
+                    "sha256": "6b5e9bb64dabb15787a14db1675291c7afaf9387438cc93a4fb7f6aec4ee6fe0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3686,
@@ -92,8 +92,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evince/48/evince-48.0.tar.xz",
-                    "sha256": "cd2f658355fa9075fdf9e5b44aa0af3a7e0928c55614eb1042b36176cf451126",
+                    "url": "https://download.gnome.org/sources/evince/48/evince-48.1.tar.xz",
+                    "sha256": "7d8b9a6fa3a05d3f5b9048859027688c73a788ff6e923bc3945126884943fa10",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evince"
@@ -112,8 +112,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz",
-                    "sha256": "7ec9d18fb283d1f84a3a3eff3b7a72b09a10c9c006597b3fbabbb5958420a87d"
+                    "url": "https://download.gnome.org/sources/gtksourceview/5.9/gtksourceview-5.9.0.tar.xz",
+                    "sha256": "55cf74d37b5bcc1d3109cde5fc758b64b7dd2e8309a19ac8e97f3cbbbb184d56"
                 }
             ]
         },
