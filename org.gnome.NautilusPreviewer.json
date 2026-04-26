@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.NautilusPreviewer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "command": "sushi",
     "cleanup": [
@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-25.10.0.tar.xz",
-                    "sha256": "6b5e9bb64dabb15787a14db1675291c7afaf9387438cc93a4fb7f6aec4ee6fe0",
+                    "url": "https://poppler.freedesktop.org/poppler-26.04.0.tar.xz",
+                    "sha256": "b0955163114af96bc0106f68cb24daf973a629462453d8b82775f81b0d4e0693",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3686,
@@ -123,8 +123,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/sushi/46/sushi-46.0.tar.xz",
-                    "sha256": "96085baaa430ab2142c606aab5c47e2fbb2fd3eb70a352137e65c59a58a0f2c6",
+                    "url": "https://download.gnome.org/sources/sushi/50/sushi-50.0.tar.xz",
+                    "sha256": "ab25177908d5ccc58568769a81eb9b4f32306786e6c73618193ebf61a127ee00",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
