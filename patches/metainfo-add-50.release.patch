@@ -1,0 +1,25 @@
+From 0db2b7fec2d0aa412beb728ff6befba21bd498d5 Mon Sep 17 00:00:00 2001
+From: Maximiliano Sandoval <msandova@gnome.org>
+Date: Tue, 28 Apr 2026 17:56:16 +0200
+Subject: [PATCH] metainfo: Add 50.0 release info
+
+This was missing at cc4eb3f7.
+---
+ data/org.gnome.NautilusPreviewer.metainfo.xml.in.in | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/data/org.gnome.NautilusPreviewer.metainfo.xml.in.in b/data/org.gnome.NautilusPreviewer.metainfo.xml.in.in
+index ec95eef..19020ba 100644
+--- a/data/org.gnome.NautilusPreviewer.metainfo.xml.in.in
++++ b/data/org.gnome.NautilusPreviewer.metainfo.xml.in.in
+@@ -22,6 +22,7 @@
+     <keyword>preview</keyword>
+   </keywords>
+   <releases>
++    <release version="50.0" date="2026-04-26"/>
+     <release version="46.0" date="2024-04-04"/>
+   </releases>
+   <translation type="gettext">sushi</translation>
+-- 
+GitLab
+
