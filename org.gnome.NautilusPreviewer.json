@@ -130,6 +130,10 @@
                         "is-important": true,
                         "name": "sushi"
                     }
+                },
+                {
+                    "type" : "patch",
+                    "path" : "patches/metainfo-add-50.release.patch"
                 }
             ]
         }
