@@ -1,8 +1,11 @@
 {
     "app-id": "org.gnome.NautilusPreviewer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "51beta",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable"
+    ],
     "command": "sushi",
     "cleanup": [
         "/include",
@@ -22,6 +25,9 @@
         "--talk-name=org.freedesktop.FileManager1",
         "--filesystem=home:ro"
     ],
+    "build-options": {
+        "append-path": "/usr/lib/sdk/rust-stable/bin:"
+    },
     "modules": [
         {
             "name": "popplerdata",
@@ -73,47 +79,83 @@
             ]
         },
         {
-            "name": "evince",
+            "name": "exempi",
+            "config-opts": [
+                "--disable-unittest",
+                "--disable-samples"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://libopenraw.freedesktop.org/download/exempi-2.6.6.tar.xz",
+                    "sha256": "900fb9957be2095c78e5111b99c49378adac58161a358f52f93c55126f34eb8f",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 767,
+                        "url-template": "https://libopenraw.freedesktop.org/download/exempi-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "papers",
             "buildsystem": "meson",
             "cleanup": [
                 "/share/GConf",
                 "/share/help"
             ],
             "config-opts": [
-                "-Dnautilus=false",
-                "-Dviewer=false",
-                "-Dpreviewer=false",
-                "-Ddbus=false",
-                "-Dintrospection=true",
                 "-Dcomics=disabled",
-                "-Dgspell=disabled",
-                "-Dgtk_doc=false"
+                "-Ddocumentation=false",
+                "-Dfile_tests=false",
+                "-Dintrospection=enabled",
+                "-Dnautilus=false",
+                "-Dpreviewer=false",
+                "-Dshell=true",
+                "-Dtests=false",
+                "-Dthumbnailer=false",
+                "-Dtiff=disabled",
+                "-Duser_doc=false"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evince/48/evince-48.1.tar.xz",
-                    "sha256": "7d8b9a6fa3a05d3f5b9048859027688c73a788ff6e923bc3945126884943fa10",
+                    "url": "https://download.gnome.org/sources/papers/51/papers-51.0.tar.xz",
+                    "sha256": "4b8caf527d85f7eabc63ebe9d2320e0490653c2e138b88fbf42e6f41dd3e451c",
                     "x-checker-data": {
                         "type": "gnome",
-                        "name": "evince"
+                        "name": "papers"
                     }
+                },
+                "cargo-sources.json",
+                {
+                    "type": "shell",
+                    "commands": [
+                        "mkdir .cargo",
+                        "cp cargo/config .cargo/"
+                    ]
                 }
             ]
         },
         {
-            "name": "sourceview-4",
+            "name": "sourceview-5",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dinstall_tests=false",
-                "-Dgtk_doc=false",
+                "-Dbuild-testsuite=false",
+                "-Ddocumentation=false",
+                "-Dinstall-tests=false",
+                "-Dintrospection=enabled",
                 "-Dvapi=false"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz",
-                    "sha256": "7ec9d18fb283d1f84a3a3eff3b7a72b09a10c9c006597b3fbabbb5958420a87d"
+                    "url": "https://download.gnome.org/sources/gtksourceview/5.21/gtksourceview-5.21.0.tar.xz",
+                    "sha256": "65f7ce9d2ec683c6ff9b27a50d909f3abef65f742d11011e1b8f8b848cadf0f7",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gtksourceview"
+                    }
                 }
             ]
         },
@@ -123,8 +165,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/sushi/50/sushi-50.0.tar.xz",
-                    "sha256": "ab25177908d5ccc58568769a81eb9b4f32306786e6c73618193ebf61a127ee00",
+                    "url": "https://download.gnome.org/sources/sushi/51/sushi-51.0.tar.xz",
+                    "sha256": "d41b1b9e640fd949895bf0e871143249eb7baa38ed4ba666dbb2427fbbc9e9a5",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
@@ -132,8 +174,8 @@
                     }
                 },
                 {
-                    "type" : "patch",
-                    "path" : "patches/metainfo-add-50.release.patch"
+                    "type": "patch",
+                    "path": "patches/metainfo-wrap-release-notes-in-description-tag.patch"
                 }
             ]
         }
