@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.NautilusPreviewer",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51beta",
     "sdk": "org.gnome.Sdk",
     "command": "sushi",
     "cleanup": [
