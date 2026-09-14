@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-26.04.0.tar.xz",
-                    "sha256": "b0955163114af96bc0106f68cb24daf973a629462453d8b82775f81b0d4e0693",
+                    "url": "https://poppler.freedesktop.org/poppler-26.08.0.tar.xz",
+                    "sha256": "dc906e68cea698109706ac6aa3d2c9d4512fcfcac42d90b8afcda486d1b9abd0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3686,
@@ -92,8 +92,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evince/48/evince-48.1.tar.xz",
-                    "sha256": "7d8b9a6fa3a05d3f5b9048859027688c73a788ff6e923bc3945126884943fa10",
+                    "url": "https://download.gnome.org/sources/evince/48/evince-48.4.tar.xz",
+                    "sha256": "f296c5c662886635d4cd597e8ac0afcde7982be4486533c2b7f095b268be8668",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evince"
@@ -123,8 +123,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/sushi/50/sushi-50.0.tar.xz",
-                    "sha256": "ab25177908d5ccc58568769a81eb9b4f32306786e6c73618193ebf61a127ee00",
+                    "url": "https://download.gnome.org/sources/sushi/51/sushi-51.0.tar.xz",
+                    "sha256": "d41b1b9e640fd949895bf0e871143249eb7baa38ed4ba666dbb2427fbbc9e9a5",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
@@ -132,8 +132,8 @@
                     }
                 },
                 {
-                    "type" : "patch",
-                    "path" : "patches/metainfo-add-50.release.patch"
+                    "type": "patch",
+                    "path": "patches/metainfo-add-50.release.patch"
                 }
             ]
         }
