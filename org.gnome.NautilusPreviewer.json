@@ -31,10 +31,7 @@
     "modules": [
         {
             "name": "popplerdata",
-            "no-autogen": true,
-            "make-install-args": [
-                "prefix=/app"
-            ],
+            "buildsystem": "cmake-ninja",
             "sources": [
                 {
                     "type": "archive",
