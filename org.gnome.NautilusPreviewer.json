@@ -64,8 +64,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-26.08.0.tar.xz",
-                    "sha256": "dc906e68cea698109706ac6aa3d2c9d4512fcfcac42d90b8afcda486d1b9abd0",
+                    "url": "https://poppler.freedesktop.org/poppler-26.10.0.tar.xz",
+                    "sha256": "6792cb7c69205007ad87d2e936cecc5b3a31fac29ab54ffc3175fdb6b2a6ce35",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3686,
@@ -140,8 +140,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/papers/51/papers-51.0.tar.xz",
-                    "sha256": "4b8caf527d85f7eabc63ebe9d2320e0490653c2e138b88fbf42e6f41dd3e451c",
+                    "url": "https://download.gnome.org/sources/papers/51/papers-51.1.tar.xz",
+                    "sha256": "ac0db229883b3d2aacbbda1700dc12aa69716664df201120926096f066e4796b",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "papers"
@@ -170,8 +170,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtksourceview/5.21/gtksourceview-5.21.0.tar.xz",
-                    "sha256": "65f7ce9d2ec683c6ff9b27a50d909f3abef65f742d11011e1b8f8b848cadf0f7",
+                    "url": "https://download.gnome.org/sources/gtksourceview/5.22/gtksourceview-5.22.0.tar.xz",
+                    "sha256": "3ebce33c781e65590a450ecd3ffade480d8e3135b52ee996f1620d6c7dffbbff",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gtksourceview"
@@ -185,8 +185,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/sushi/51/sushi-51.1.tar.xz",
-                    "sha256": "d326ec69fc004be3a5fc048f7ecf2c8eb828b7d8b682f1e7a2ba01a5e72993e1",
+                    "url": "https://download.gnome.org/sources/sushi/51/sushi-51.2.tar.xz",
+                    "sha256": "928c0155bd5664098bdb4d591806e70e8219a4b66bf46c95382f72589e4e9a6e",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
