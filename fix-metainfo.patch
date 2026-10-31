@@ -1,0 +1,12 @@
+diff --git a/data/org.gnome.NautilusPreviewer.metainfo.xml.in.in b/data/org.gnome.NautilusPreviewer.metainfo.xml.in.in
+index c475691..fb3aff9 100644
+--- a/data/org.gnome.NautilusPreviewer.metainfo.xml.in.in
++++ b/data/org.gnome.NautilusPreviewer.metainfo.xml.in.in
+@@ -23,7 +23,6 @@
+   </keywords>
+   <releases>
+     <!--NEXT_RELEASE_PLACEHOLDER-->
+-    <release version="@release-version@" type="snapshot"/>
+     <release version="51.2" type="stable" date="2026-10-12">
+       <description><p>Minor system integration fixes</p></description>
+     </release>

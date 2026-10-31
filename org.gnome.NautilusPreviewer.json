@@ -192,6 +192,10 @@
                         "is-important": true,
                         "name": "sushi"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "fix-metainfo.patch"
                 }
             ]
         }
